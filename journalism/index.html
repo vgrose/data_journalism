@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>D3Times</title>
+  <title>Data Journalism</title>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -20,13 +20,13 @@
 <body>
   <div class="container">
     <div class="row">
-      <div class="col-xs-12 col-md-12">
-        <h1>D3Times</h1>
+      <div class="col-xs-12 col-md-9">
+        <h1 class="text-center">Data Journalism</h1>
       </div>
     </div>
     <div class="row">
       <div class="col-xs-12  col-md-9">
-        <div id="scatter">
+        <div class="scatter">
           <!-- We append our chart here. -->
         </div>
       </div>
@@ -34,18 +34,21 @@
     <div class="row">
       <div class="col-xs-12  col-md-9">
         <div class="article">
-          <h2>Correlations Discovered Between Health Risks and Age, Income</h2>
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
-            quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-            ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+          <h2 class="text-center">Correlations Discovered Between Health Risks and Socioeconomic Factors</h2>
+          <p>This scatter plot displays the relationship between state population obesity percentages and median yearly household income.
+            Each point is labelled with the state's abbreviation </p>
 
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
-            quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-            ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+          <p>Data for this visualization is based on the 2014 <a ref="https://factfinder.census.gov/faces/nav/jsf/pages/searchresults.xhtml">American Community Survey</a> 1 year estimates.</p>
 
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
-            quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-            ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+          <p>
+              The American Community Survey (ACS) is a nationwide survey designed to provide communities a fresh 
+              look at how they are changing. It is a critical element in the Census Bureau's decennial census program. 
+              The ACS collects information such as age, race, income, commute time to work, home value, veteran status, 
+              and other important data. As with the 2010 decennial census, information about individuals remains confidential.
+              The ACS produces 1-year estimates annually for geographic areas with a population of 65,000 or more. 
+              This includes the nation, all states and the District of Columbia, all congressional districts, approximately 
+              800 counties, and 500 metropolitan and micropolitan statistical areas, among others.
+          </p>
         </div>
       </div>
     </div>
@@ -53,7 +56,7 @@
 
   <!-- Footer-->
   <div id="footer">
-    <p>The Coding Boot Camp&copy;2016</p>
+    <p>Victoria Grose&copy;2019</p>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
